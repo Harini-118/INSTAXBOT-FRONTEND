@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Menu, X,Zap } from 'lucide-react';
 import HeroSection from "./components/HeroSection";
-
+import FeatureSection from "./components/FeatureSection";
+import Testimonial from "./components/Testimonial";
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -96,7 +97,8 @@ function App() {
         )}
       </nav>
 <div><HeroSection /></div>
-
+<div><FeatureSection/></div>
+<div><Testimonial/></div>
 
     </div>
   );
