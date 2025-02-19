@@ -3,6 +3,11 @@ import { Menu, X,Zap } from 'lucide-react';
 import HeroSection from "./components/HeroSection";
 import FeatureSection from "./components/FeatureSection";
 import Testimonial from "./components/Testimonial";
+import UseCaseSection from "./components/UseCaseSection";
+import PricingSection from "./components/PricingSection";
+import FooterSection from "./components/FooterSection";
+import TrustedBySection from "./components/TrustedBySection";
+import AboutUsSection from "./components/AboutUsSection";
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -58,7 +63,7 @@ function App() {
             <div className="flex flex-col space-y-4">
               <a 
                 href="#about" 
-                className="text-gray-600 hover:text-purple-600 font-medium transition-colors px-4 py-2 hover:bg-purple-50 rounded-lg"
+                className="text-gray-600 hover:textpurple-600 font-medium transition-colors px-4 py-2 hover:bg-purple-50 rounded-lg "
                 onClick={() => setIsMenuOpen(false)}
               >
                 About Us
@@ -98,7 +103,11 @@ function App() {
       </nav>
 <div><HeroSection /></div>
 <div><FeatureSection/></div>
+<div><UseCaseSection/></div>
+<div><PricingSection/></div>
+<div><AboutUsSection/></div>
 <div><Testimonial/></div>
+<div><FooterSection/></div>
 
     </div>
   );
